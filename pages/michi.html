@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../michi.css">
+</head>
+<body>
+    <div class="container my-auto">
+
+        <div class="row">
+            <button type="button" class="col text-center bg-danger m-4 p-3 text-white btn" id="0-0" onclick=gameOn(0,0)>&#128151;             
+            </button>
+            <button class="col text-center bg-danger m-4 p-3 text-white btn" id="0-1" onclick=gameOn(0,1)>&#128151;              
+            </button>
+            <button class="col text-center bg-danger m-4 p-3 text-white btn" id="0-2" onclick=gameOn(0,2)>&#128151;              
+            </button>
+        </div>
+        <div class="row">
+            <button type="button" class="col text-center bg-danger m-4 p-3 text-white btn" id="1-0" onclick=gameOn(1,0)>&#128151;           
+            </button>
+            <button class="col text-center bg-danger m-4 p-3 text-white btn" id="1-1" onclick=gameOn(1,1)>&#128151;                
+            </button>
+            <button class="col text-center bg-danger m-4 p-3 text-white btn" id="1-2" onclick=gameOn(1,2)>&#128151;                
+            </button>
+        </div>
+        <div class="row">
+            <button type="button" class="col text-center bg-danger m-4 p-3 text-white btn" id="2-0" onclick=gameOn(2,0)>&#128151;                
+            </button>
+            <button class="col text-center bg-danger m-4 p-3 text-white btn" id="2-1" onclick=gameOn(2,1)>&#128151;                
+            </button>
+            <button class="col text-center bg-danger m-4 p-3 text-white btn" id="2-2" onclick=gameOn(2,2)>&#128151;                
+            </button>
+        </div>
+        <div class="h2 text-center my-5 mx-auto bg-secondary border rounded py-3 " id="resultado">
+            ----RESULTADO----
+        </div>
+        <div class="text-center">
+            <div class="p">
+                Para mi turno usa este botón ↓
+            </div>
+            <button class="btn mt-3 bg-primary" onclick=prueba()>
+                FABRI
+            </button>
+            <div class="p" id="denuevo">
+            </div>
+        </div>
+        
+    </div>
+    <script src="../game.js"></script>
+</body>
+</html>
